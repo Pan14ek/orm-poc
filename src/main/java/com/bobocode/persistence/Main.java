@@ -9,11 +9,9 @@ public class Main {
         EntityManager entityManager = simpleORM.entityManager();
 
         Person person = entityManager.find(Person.class, 1);
-
         System.out.println(person);
 
-        Note note = entityManager.find(Note.class, 1);
-
-        System.out.println(note);
+        Person person1 = entityManager.find(Person.class, 1);
+        System.out.println(person1);
     }
 }
