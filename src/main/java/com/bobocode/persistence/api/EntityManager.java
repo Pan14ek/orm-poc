@@ -1,7 +1,7 @@
 package com.bobocode.persistence.api;
 
-public interface EntityManager {
+public interface EntityManager extends AutoCloseable {
 
-    public <T> T find(Class<T> entityClass, Object primaryKey);
+    <T> T find(Class<T> entityClass, Object primaryKey);
 
 }
